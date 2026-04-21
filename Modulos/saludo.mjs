@@ -1,5 +1,5 @@
 export function saludar(nombre){
-    return 'Hola: ${nombre}'
+    return `Hola: ${nombre}`
 }
 
 export function sumar(a, b){
@@ -9,4 +9,3 @@ export function sumar(a, b){
 export function restar(a, b){
     return a-b;
 }
-

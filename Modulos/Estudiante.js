@@ -1,4 +1,5 @@
-import Persona from "./Persona";
+import Persona from "./Persona.js";
+
 export default class Estudiante extends Persona{
     constructor(){
         super();
@@ -6,7 +7,7 @@ export default class Estudiante extends Persona{
     }
 
     estudiar(){
-        return '${this.nombre} esta estudiando ${this.carrera}';
+        return `${this.nombre} esta estudiando ${this.carrera}`;
     }
 
     #calcularPromedio(){
@@ -14,8 +15,6 @@ export default class Estudiante extends Persona{
     }
 
     verPromedio(){
-        return 'Promedio: ${this.#calcularPromedio()}'
+        return `Promedio: ${this.#calcularPromedio()}`
     }
 }
-
-
